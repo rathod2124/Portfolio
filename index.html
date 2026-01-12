@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramavath Sai Kumar | ML Engineer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Animated Orbs Background -->
+    <canvas id="orbs"></canvas>
+
+    <header class="header">
+        <div class="logo">PORTFOLIO.</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+
+            <!-- Left: Profile Photo -->
+            <div class="hero-image">
+                <img src="photo.jpeg" alt="Ramavath Sai Kumar">
+            </div>
+
+            <!-- Right: Text -->
+            <div class="hero-content">
+                <h1>Ramavath Sai Kumar</h1>
+                <h2 class="typing"></h2>
+
+                <p class="summary">
+                    Machine Learning Engineer with experience in building scalable AI solutions using Python, TensorFlow, PyTorch, and Linux-based systems.
+                </p>
+
+                <div class="actions">
+                    <a href="projects.html" class="btn primary">View Projects</a>
+                    <a href="contact.html" class="btn secondary">Contact Me</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Typing Animation -->
+    <script>
+        const text = "Machine Learning Engineer | AI | Python | DevOps";
+        let i = 0;
+
+        function typingEffect() {
+            if (i < text.length) {
+                document.querySelector(".typing").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typingEffect, 80);
+            }
+        }
+        typingEffect();
+    </script>
+
+    <script src="orbs.js"></script>
+</body>
+
+</html>

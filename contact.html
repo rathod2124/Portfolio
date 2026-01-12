@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Ramavath Sai Kumar</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Animated Orbs Background -->
+    <canvas id="orbs"></canvas>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="logo">PORTFOLIO.</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="contact-container">
+            <h1>Contact Me</h1>
+            <p>If you’d like to get in touch, feel free to reach out via email, phone, or social media. I’d love to hear from you!</p>
+
+            <!-- Contact Details Cards -->
+            <div class="contact-cards">
+                <div class="card">
+                    <i class="fas fa-envelope fa-2x"></i>
+                    <h3>Email</h3>
+                    <p><a href="mailto:ramavathsai212409@gmail.com">ramavathsai212409@gmail.com</a></p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-phone fa-2x"></i>
+                    <h3>Phone</h3>
+                    <p><a href="tel:+919381447406">+91 9381447406</a></p>
+                </div>
+                <div class="card">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                    <h3>LinkedIn</h3>
+                    <p><a href="https://www.linkedin.com/in/ramavathsai/" target="_blank" rel="noopener noreferrer">linkedin.com/in/ramavathsai</a></p>
+                </div>
+                <div class="card">
+                    <i class="fab fa-github fa-2x"></i>
+                    <h3>GitHub</h3>
+                    <p><a href="https://github.com/rathod2124" target="_blank" rel="noopener noreferrer">github.com/rathod2124</a></p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2>Send Me a Message</h2>
+                <form action="mailto:ramavathsai212409@gmail.com" method="POST" enctype="text/plain">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Orbs Animation Script -->
+    <script src="orbs.js"></script>
+
+</body>
+
+</html>
